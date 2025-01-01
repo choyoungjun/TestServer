@@ -13,20 +13,18 @@ namespace RestAPI_Server
 {
     public class RestAPI_Server
     {
-        
         static void Main(string[] args)
         {
             Console.WriteLine("Server Start.");
             test_server test = new test_server();
             test.serverInit();
 
-            while(true)
+            while (true)
             {
 
             }
-        }        
+        }
     }
-
 
     public class test_server
     {
@@ -41,6 +39,7 @@ namespace RestAPI_Server
                 serverStart();
             }
         }
+
         private void serverStart()
         {
             if (!httpListener.IsListening)
@@ -58,20 +57,29 @@ namespace RestAPI_Server
                         string rawurl = context.Request.RawUrl;
                         string httpmethod = context.Request.HttpMethod;
 
+                        string text;
+                        //result += string.Format("httpmethod = {0}\r\n", httpmethod);
+                        //result += string.Format("url = {0}, ", rawurl);
+                        var request = context.Request;
+                        using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
+                        {
+                            text = reader.ReadToEnd();
+                        }
+
                         string result = "";
-
-                        result += string.Format("httpmethod = {0}\r\n", httpmethod);
-                        result += string.Format("rawurl = {0}\r\n", rawurl);
-
-                        // if (richTextBox1.InvokeRequired)
-                        //     richTextBox1.Invoke(new MethodInvoker(delegate { richTextBox1.Text = result; }));
-                        // else
-                        //     richTextBox1.Text = result;
-
+                        result += "{ " + text + "}";
                         Console.WriteLine("Post : " + result);
 
-                        context.Response.Close();
+                        HttpListenerResponse response = context.Response;
 
+                        response.ContentType = "application/json;charset=utf-8";
+                        byte[] buffer = System.Text.Encoding.UTF8.GetBytes(result);
+                        response.ContentLength64 = buffer.Length;
+                        System.IO.Stream output = response.OutputStream;
+                        output.Write(buffer, 0, buffer.Length);
+                        output.Close();
+
+                        context.Response.Close();
                     }
                 });
 

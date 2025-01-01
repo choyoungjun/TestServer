@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "c:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "e:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "c:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "c:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "e:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "c:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\skotos\\.nuget\\packages\\",
-        "outputPath": "e:\\C#\\Server\\test1\\ConsoleApp1\\obj\\",
+        "outputPath": "c:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

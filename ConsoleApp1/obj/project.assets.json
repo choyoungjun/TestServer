@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "E:\\C#\\Server\\test1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\skotos\\.nuget\\packages\\",
-      "outputPath": "E:\\C#\\Server\\test1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\skotos\\OneDrive\\문서\\GitHub\\test\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
