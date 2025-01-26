@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\Server\\testServer\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "E:\\C#\\Server\\testServer\\testServer.csproj": {}
   },
   "projects": {
-    "E:\\C#\\Server\\testServer\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "E:\\C#\\Server\\testServer\\testServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Server\\testServer\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "E:\\C#\\Server\\testServer\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "E:\\C#\\Server\\testServer\\testServer.csproj",
+        "projectName": "testServer",
+        "projectPath": "E:\\C#\\Server\\testServer\\testServer.csproj",
         "packagesPath": "C:\\Users\\skotos\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Server\\testServer\\ConsoleApp1\\obj\\",
+        "outputPath": "E:\\C#\\Server\\testServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5,13 +5,14 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.ServiceProcess;
 //using System.Windows.Forms;
 //using Newtonsoft.Json;
 
 
-namespace RestAPI_Server
+namespace RestAPI_Server 
 {
-    public class RestAPI_Server
+    public class RestAPI_Server 
     {
         static void Main(string[] args)
         {
@@ -26,7 +27,7 @@ namespace RestAPI_Server
         }
     }
 
-    public class test_server
+    public class test_server 
     {
         HttpListener httpListener = null;
 
@@ -39,6 +40,8 @@ namespace RestAPI_Server
                 serverStart();
             }
         }
+
+
 
         private void serverStart()
         {
@@ -66,8 +69,8 @@ namespace RestAPI_Server
                             text = reader.ReadToEnd();
                         }
 
-                        string result = "";
-                        result += "{ " + text + "}";
+                        string result = text;
+                        //result += "{ " + text + "}";
                         Console.WriteLine("Post : " + result);
 
                         HttpListenerResponse response = context.Response;
